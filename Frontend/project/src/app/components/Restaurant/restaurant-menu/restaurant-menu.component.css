@@ -1,0 +1,112 @@
+.main{background-image:url(/assets/images/background2.jpg );
+    padding-bottom: 200px;
+     padding-top: 100px;}
+  
+    .container{
+        
+        
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgb(255, 255, 255);
+        transition: all 0.3s ease-in-out;
+        background-image: url(/assets/images/background3.jpg); 
+        background-size:cover;
+        background-position:center; 
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+       img{margin: 5px; 
+        cursor: pointer ;
+        float: left;
+        width:200px; 
+        height:150px }
+        
+        
+      input{width: 25px;
+         height: 25px;}
+        button {
+          display: inline-block;
+          padding: 10px 20px;
+          
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          box-shadow: 10px 15px 5px rgba(0, 0, 0, 0.5);
+          float:left;
+          font-weight: bold;
+          font-size:large;
+        }
+       
+
+            h6{margin: 20px;
+                margin: 100px;
+
+            text-shadow: none;
+            color: black;
+            font-weight: bold;
+            font-size: x-large;
+            }
+
+            .head{
+                font-size: medium;
+            }
+
+            div{color: rgb(252, 171, 20);
+                font-size: larger;
+                font-weight: 900;}
+
+
+                .shadow-box {
+                    box-shadow: 0px 0px 5px rgb(255, 254, 254);
+                    transition: all 0.3s ease-in-out;
+                    background-color: rgb(0, 0, 0); opacity: 0.8;
+                }
+                    .shadow-box:hover {
+                        box-shadow: 0px 0px 30px rgb(255, 255, 255);
+                        transform: scale(1.05);
+                        opacity: 1;
+                    }
+                    
+                
+                .h5 {
+                    text-shadow: 2px 2px 0px rgb(132, 78, 2);
+                    font-weight: bolder ;
+                    font-size: x-large;
+                     color: white;
+                }
+                
+               
+
+                
+
+                /*make price at the rigth bottom of the div */
+                .price {
+                    
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    padding: 10px 20px;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: #fff;
+                    border-radius: 5px 0 0 0; 
+                
+                    opacity: 0;
+                    transition: all 0.3s ease-in-out;
+                }
+                    .shadow-box:hover .price {
+                        opacity: 1;
+                    }
+                
+                    h2{font-weight: bolder ;
+                        font-size:xx-large;
+                         color: rgb(255, 255, 255);
+                         text-shadow: 1px 1px 0.2px rgb(89, 53, 2);}
+
+                         a{
+                            float: right; 
+                            font-weight: bold;
+                            font-size:large;
+                         }

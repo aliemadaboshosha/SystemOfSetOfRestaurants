@@ -1,0 +1,94 @@
+.main{padding-bottom: 200px;
+     padding-top: 100px;
+      background-color: rgba(128, 56, 35, 0.723);}
+
+
+      .navigate{padding-bottom: 200px;
+         padding-top: 100px;
+          background-image: url(/assets/images/background2.jpg);
+           background-size:cover;
+        background-position:center;
+       }
+
+
+div{color: rgb(0, 0, 0);
+font-size: medium;
+font-weight: 600;}
+a{
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.restaurant a {
+    font-weight: bold;
+    font-size: large;
+    margin-right: 10px;
+    color: #ffc107;
+    
+    transition: all 0.3s ease-in-out;
+}
+.restaurant a:hover {
+    color: white;
+    
+   
+    transition: all 0.3s ease-in-out;
+}
+.shadow-box {
+    box-shadow: 0px 0px 5px rgb(255, 254, 254);
+    transition: all 0.3s ease-in-out;
+}
+    .shadow-box:hover {
+        box-shadow: 0px 0px 30px rgb(255, 255, 255);
+        transform: scale(1.05);
+    }
+.Menu{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+     
+
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.shadow-box:hover .Menu {
+    opacity: 1;
+}
+.restaurant {
+	background-color: rgb(0, 0, 0);
+	margin-bottom: 20px;
+	padding: 10px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.restaurant img {
+	margin-right: 10px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.restaurant h5 {
+	font-weight: bolder;
+	font-size: x-large;
+	margin-top: 0;
+	margin-bottom: 5px;
+	text-align: center;
+}
+font{
+    /*make text shadow*/
+    text-shadow: 2px 2px 0px rgb(243, 147, 11);
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.container{background-color: black;}

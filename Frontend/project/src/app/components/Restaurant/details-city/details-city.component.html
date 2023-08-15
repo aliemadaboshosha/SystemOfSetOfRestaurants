@@ -1,0 +1,55 @@
+ 
+<div class="main"  align="center" >
+<div class="navigate" align="center" >
+    <div style="display: inline-block;">
+            <label>
+                <label> <font color="white" size="5"  >Cities :</font> </label>
+                     <select  name="example_length" aria-controls="example" size="1" style="width: 200px;" (change)="ShoW($any($event.target).value)">
+                        <option value="0">All Cities</option>
+                      <option *ngFor="let city of cities" value={{city.cityId}} >{{city.name}}</option>
+                      
+
+                      </select>
+                       
+            </label>
+    </div>
+    
+                                  <div  style="display: inline-block; margin: 15px;">
+                                        <label> <font color="white" size="5"  >Search:</font>
+                                            <input type="search" name="key"  (change)="Search($any($event.target).value)">
+                                       
+
+                                        </label>
+                                  </div>
+
+
+</div>
+
+
+
+<div class="container text-center" >
+    <div class="row row-cols-2">
+        <div class="col-lg-3 shadow-box" *ngFor="let restaurant of Restaurants">
+            <div class="restaurant">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <img class="img-thumbnail" src="/assets/images/{{restaurant.name}}.jpg" width="250px" height="300px" />
+                    
+                        <div> 
+                            <a class="link Menu" [routerLink]="['/Restaurant','Menu',restaurant.restaurantId,restaurant.name,restaurant.address,restaurant.phone]"><h5>Menu</h5></a>
+         </div>
+                    </div>
+        
+                    
+                </div>
+                <h5>{{restaurant.name}}</h5>
+                <h5>Address</h5> <p> {{restaurant.address}}</p>
+
+                <h5>Phone</h5><p>{{restaurant.phone}}</p>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+</div>

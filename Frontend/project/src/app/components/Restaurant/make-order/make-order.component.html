@@ -1,0 +1,107 @@
+<div class="main">
+<div class="container my-5" *ngIf="flag"   >
+  
+    <h1 class="mb-3  h5" style="color: white; font-weight: bolder; font-size: xx-large; ">Fill Order Data</h1>
+    <div class="row" >
+  <form #orderForm="ngForm" (ngSubmit)="submitOrder()" >
+  
+    <div hidden>
+      <label class="form-lable  h5" for="orderId" style="color: white; font-weight: bolder; ">Order ID:</label>
+      <input class="form-control" type="number" id="orderId" name="orderId" [(ngModel)]="order.orderId" required>
+    </div>
+  
+    <div class="mb-3">
+      <label class="form-lable  h5" for="customerName" style="color: white; font-weight: bolder; ">Customer Name:</label>
+      <input class="form-control" type="text" id="customerName" name="customerName" [(ngModel)]="order.customerName" required>
+    </div>
+  
+    <div class="mb-3">
+      <label class="form-lable h5" for="customerAddress" style="color: white; font-weight: bolder; ">Customer Address:</label>
+      <input class="form-control" type="text" id="customerAddress" name="customerAddress" [(ngModel)]="order.customerAddress" required>
+    </div>
+  
+    <div class="mb-3">
+      <label class="form-lable h5" for="customerEmail" style="color: white; font-weight: bolder; ">Customer Email:</label>
+      <input class="form-control" type="email" id="customerEmail" name="customerEmail" [(ngModel)]="order.customerEmail" required>
+    </div>
+  
+    <div class="mb-3">
+      <label class="form-lable h5" for="customerPhone" style="color: white; font-weight: bolder; ">Customer Phone:</label>
+      <input class="form-control" type="text" id="customerPhone" name="customerPhone" [(ngModel)]="order.customerPhone" required>
+    </div>
+  
+    <div class="mb-3">
+      <label class="form-lable h5" for="orderDate" style="color: white; font-weight: bolder; ">Order Date:</label>
+      <input class="form-control" type="date" id="orderDate" name="orderDate" [(ngModel)]="order.orderDate" required>
+    </div>
+  
+    <button type="submit" [disabled]="!orderForm.valid" class="btn btn-success">Submit</button>
+  <button type="button" class="btn btn-danger" (click)="BackToMenu()" style="float: right;">Back TO Menu</button>
+  </form>
+    </div>
+  </div>
+
+
+
+
+
+  
+
+<form    name="myForm" *ngIf="OrderItems && OrderItems.length>0&&!flag" style="padding-bottom: 200px; padding-top: 100px;background-color: rgba(0, 0, 0, 0.356); " >
+  <div class="card-body">
+    <h5 class="card-title" style="color: #fd8e33; font-weight: bold;">Customer Details</h5>
+    <p class="card-text" style="font-weight: bold;">Name: {{ order.customerName }}</p>
+    <p class="card-text" style="font-weight: bold;">Address: {{ order.customerAddress }}</p>
+    <p class="card-text" style="font-weight: bold;">Email: {{ order.customerEmail }}</p>
+    <p class="card-text" style="font-weight: bold;">Phone: {{ order.customerPhone }}</p>
+    <
+  </div>
+  <table class="table" >
+    
+    <thead>
+      
+        <tr>  
+            <th></th>
+            
+            <th scope=""col>Name</th>
+            <th scope=""col>Price</th>
+           
+            <th></th>
+            
+
+
+            
+
+
+
+        </tr>
+      
+
+
+    </thead>
+    <tbody>
+<tr *ngFor="let Item of OrderItems" >
+    <!-- <td>{{Item.image}}</td> -->
+    <td><img class="images" src="/assets/images/{{Item.name}}.jpg" width="120px" style="cursor: pointer" /></td>
+   
+    <td>{{Item.name}}</td>
+    <td>{{Item.price}}</td>
+    
+    <td><input type="number"  style="width: 80px; height: 25px;"  min="1" max="100"  ></td>
+
+
+  
+    
+    
+</tr>
+<tr></tr>
+    </tbody>
+</table>
+<button style="float: left; font-weight: bold;font-size:large;"class="btn btn-success" (click)="finish()" >Check out</button>
+<button type="button" class="btn btn-danger" (click)="onCancel()" style="float: right;">Back to user Data</button>
+<br>
+<br>
+<br>
+
+</form>
+</div>

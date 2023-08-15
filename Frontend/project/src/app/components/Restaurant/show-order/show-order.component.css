@@ -1,0 +1,11 @@
+h2,h5{text-shadow: 2px 2px 0px rgb(81, 47, 1) 1 ;
+font-weight: bold;
+color: #fd8e33;
+}
+p{font-weight: bold;}
+
+.main{background-image:url(/assets/images/background2.jpg );
+    padding-bottom: 200px; 
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;}

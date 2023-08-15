@@ -1,0 +1,19 @@
+td ,p{color: white;
+font-size: larger;
+font-weight: bolder;
+text-shadow: 2px 2px 0px rgb(81, 47, 1);}
+
+th{font-size: x-large;
+font-weight: bolder;
+color: white;
+text-shadow: 2px 2px 0px rgb(81, 47, 1);}
+
+
+.card-body:hover{background-color: rgba(0, 0, 0, 0.652);}
+tbody
+tbody tr{background-color: rgba(0, 0, 0, 0.356);}
+tbody tr:hover{background-color: rgba(0, 0, 0, 0.652);}
+
+.main{background-image:url(/assets/images/background2.jpg );
+    padding-bottom: 200px; 
+    padding-top: 100px; }

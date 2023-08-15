@@ -1,0 +1,50 @@
+<div class="main">
+<div  >
+  <div class="row">
+    <div class="col-md-12">
+     
+
+
+      <form  #orderForm="ngForm" (ngSubmit)="FinishChoose()" >
+        <div class="container text-center"  >
+          <h2 class="text-center " >Restaurant Menu</h2>
+          <div class="row row-cols-2" style="padding: 10px;" >
+              <div class="col shadow-box " *ngFor="let Item of Menu"  >
+               
+                <div >
+                  
+                    <img class="images img-thumbnail" src="/assets/images/{{Item.name}}.jpg"  [align]="" />   
+                    
+                    <div>
+
+                        <input type="checkbox"   value="{{Item.menuItemId}}" (change)="createorder($any($event.target).value)" >
+                        <label ><h5 class="h5">{{Item.name}}</h5>  </label>   
+                        <h5   class="h5 price" >Price:     {{Item.price}}</h5> 
+
+                      </div>
+                </div>
+               
+        
+               
+        
+                <div>  
+                  
+                </div>
+               
+                <hr style="color: white;size: 3px;">
+            </div>
+              
+            </div>
+            <div>
+             <button class="btn btn-success"[disabled]="!(SelectedMenuItems.length>0)"> Submit</button> 
+
+              <a  class="btn btn-primary" [routerLink]="['/home']">Back -></a>
+              </div>
+          </div>
+          
+      </form>
+
+    </div>
+  </div>
+  </div>
+</div>
